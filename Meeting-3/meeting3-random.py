@@ -1,0 +1,12 @@
+import random
+
+names =[]
+print('Add names to shuffle! \nPress s to stop')
+while True:
+    add_name = input('Add name : ')
+    if add_name.lower() != 's':
+        names.append(add_name)
+    else:
+        random_name = random.choice(names)
+        print('Choosen person : ' + random_name)
+        break
